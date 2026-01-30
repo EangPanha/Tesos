@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ទំព័រដើម</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Placeholder for the header -->
+    <div id="header"></div>
+
+    <main class="home-hero">
+      <h1>សូមស្វាគមន៍មកកាន់ទំព័រដើម</h1>
+      <p>សូមជ្រើសជម្រើសពីម៉ឺនុយដើម្បីទៅកាន់ទំព័រផ្សេងៗ។</p>
+    </main>
+
+    <script>
+      // Function to load the header into the page
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("header").innerHTML = data))
+        .catch((error) => console.error("Error loading header:", error));
+    </script>
+  </body>
+</html>
